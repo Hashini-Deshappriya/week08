@@ -6,10 +6,10 @@ on:
   # Manual trigger
   workflow_dispatch:
 
-  # Automatically on pushes to main branch
+  # Automatically on pushes to dev branch
   push:
     branches:
-      - main
+      - dev
     paths:
       - 'frontend/**'
       - '.github/workflows/frontend_ci.yml'

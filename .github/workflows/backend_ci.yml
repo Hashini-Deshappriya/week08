@@ -3,12 +3,12 @@
 name: Backend CI - Test, Build and Push Images to ACR
 
 # Trigger the workflow on pushes to the 'main' branch
-# You can also add 'pull_request:' to run on PRs
+# We can also add 'pull_request:' to run on PRs
 on:
   # Manual trigger
   workflow_dispatch:
 
-  # Automatically on pushes to main branch
+  # Automatically on pushes to dev branch
   push:
     branches: [ "dev" ]
     paths:

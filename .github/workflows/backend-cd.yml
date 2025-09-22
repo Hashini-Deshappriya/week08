@@ -17,9 +17,9 @@ on:
         default: '<acr_name>'
   # Trigger this workflow after CI workflow succeeds
   
-    workflow_run:
-      workflows: ["Backend CI - Test, Build and Push Images to ACR"]
-      types:
+  workflow_run:
+    workflows: ["Backend CI - Test, Build and Push Images to ACR"]
+    types:
         - completed
 
 
